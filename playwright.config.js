@@ -8,6 +8,8 @@ import { channel } from 'node:diagnostics_channel';
  */
 const config=({
   testDir: './tests',
+  testMatch:'**/*.spec.js',
+  retries:0,
   timeout: 40 *1000, // full test timeout
   expect : {timeout: 5000}, // expect timeout
   reporter:'html',
